@@ -5,4 +5,13 @@
   <version>1.0.0</version>
   <name>HK_example</name>
   <description>hk example</description>
+  
+  	<distributionManagement>
+      <repository>
+          <id>github</id>
+          <name>GitHub Apache Maven Packages</name>
+          <url>https://maven.pkg.github.com/hassibnkhoury/hk-java-package</url>
+	      </repository>
+	</distributionManagement>
+  
 </project>
