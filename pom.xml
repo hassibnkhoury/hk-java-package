@@ -5,14 +5,37 @@
   <version>1.0.0</version>
   <name>HK_example</name>
   <description>hk example</description>
-  
-  	<distributionManagement>
-	      <repository>
-		  <id>github</id>
-		  <name>GitHub Apache Maven Packages</name>
-		  <url>https://maven.pkg.github.com/hassibnkhoury/hk-java-package</url>
-	      </repository>
-	</distributionManagement>
+  <properties>
+	<java.version>17</java.version>
+</properties>
+ <distributionManagement>
+      <repository>
+	  <id>github</id>
+	  <name>GitHub Apache Maven Packages</name>
+	  <url>https://maven.pkg.github.com/hassibnkhoury/hk-java-package</url>
+      </repository>
+ </distributionManagement>
+<repositories>
+	<repository>
+		<id>spring-milestones</id>
+		<name>Spring Milestones</name>
+		<url>https://repo.spring.io/milestone</url>
+		<snapshots>
+			<enabled>false</enabled>
+		</snapshots>
+	</repository>
+</repositories>
+<pluginRepositories>
+	<pluginRepository>
+		<id>spring-milestones</id>
+		<name>Spring Milestones</name>
+		<url>https://repo.spring.io/milestone</url>
+		<snapshots>
+			<enabled>false</enabled>
+		</snapshots>
+	</pluginRepository>
+</pluginRepositories>
+<packaging>jar</packaging>
   <build>
   <plugins>
     <plugin>
